@@ -21,10 +21,15 @@ const App = () => {
     const newNumber =parseInt(formData.get('new-number'));
    setCurentNumber(newNumber);
 
-   if (newNumber <= -100 || newNumber >= 100) {
+    if (newNumber <= -100 || newNumber >= 100) {
+
     alert('Please enter a number between -100 and 100');
-    return;
-   }
+    
+    } else {
+    
+    setCurentNumber(newNumber);
+    
+    }
   }
 // Reset button
   const resetButton = () => {
